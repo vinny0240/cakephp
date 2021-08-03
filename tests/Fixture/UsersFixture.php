@@ -6,9 +6,9 @@ namespace App\Test\Fixture;
 use Cake\TestSuite\Fixture\TestFixture;
 
 /**
- * ClientesFixture
+ * UsersFixture
  */
-class ClientesFixture extends TestFixture
+class UsersFixture extends TestFixture
 {
     /**
      * Fields
@@ -18,9 +18,8 @@ class ClientesFixture extends TestFixture
     // phpcs:disable
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 10, 'autoIncrement' => true, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null, 'unsigned' => null],
-        'nome' => ['type' => 'string', 'length' => 50, 'default' => null, 'null' => false, 'collate' => null, 'comment' => null, 'precision' => null],
-        'categoria_id' => ['type' => 'biginteger', 'length' => 20, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null, 'unsigned' => null, 'autoIncrement' => null],
-        'produto_id' => ['type' => 'biginteger', 'length' => 20, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null, 'unsigned' => null, 'autoIncrement' => null],
+        'nome' => ['type' => 'string', 'length' => 220, 'default' => null, 'null' => false, 'collate' => null, 'comment' => null, 'precision' => null],
+        'email' => ['type' => 'string', 'length' => 220, 'default' => null, 'null' => false, 'collate' => null, 'comment' => null, 'precision' => null],
         'created' => ['type' => 'date', 'length' => null, 'default' => null, 'null' => true, 'comment' => null, 'precision' => null],
         'modified' => ['type' => 'date', 'length' => null, 'default' => null, 'null' => true, 'comment' => null, 'precision' => null],
         '_constraints' => [
@@ -39,8 +38,7 @@ class ClientesFixture extends TestFixture
             [
                 'id' => 1,
                 'nome' => 'Lorem ipsum dolor sit amet',
-                'categoria_id' => 1,
-                'produto_id' => 1,
+                'email' => 'Lorem ipsum dolor sit amet',
                 'created' => '2021-08-03',
                 'modified' => '2021-08-03',
             ],

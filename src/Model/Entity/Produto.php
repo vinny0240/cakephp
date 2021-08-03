@@ -12,8 +12,8 @@ use Cake\ORM\Entity;
  * @property string $nome
  * @property int $categoria_id
  * @property int $preco
- * @property \Cake\I18n\FrozenDate|null $criado
- * @property \Cake\I18n\FrozenDate|null $modificado
+ * @property \Cake\I18n\FrozenDate $created
+ * @property \Cake\I18n\FrozenDate $modified
  *
  * @property \App\Model\Entity\Categoria $categoria
  * @property \App\Model\Entity\Cliente[] $clientes
@@ -33,8 +33,8 @@ class Produto extends Entity
         'nome' => true,
         'categoria_id' => true,
         'preco' => true,
-        'criado' => true,
-        'modificado' => true,
+        'created' => true,
+        'modified' => true,
         'categoria' => true,
         'clientes' => true,
     ];

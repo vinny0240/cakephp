@@ -21,8 +21,8 @@ class ProdutosFixture extends TestFixture
         'nome' => ['type' => 'string', 'length' => 50, 'default' => null, 'null' => false, 'collate' => null, 'comment' => null, 'precision' => null],
         'categoria_id' => ['type' => 'biginteger', 'length' => 20, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null, 'unsigned' => null, 'autoIncrement' => null],
         'preco' => ['type' => 'biginteger', 'length' => 20, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null, 'unsigned' => null, 'autoIncrement' => null],
-        'criado' => ['type' => 'date', 'length' => null, 'default' => null, 'null' => true, 'comment' => null, 'precision' => null],
-        'modificado' => ['type' => 'date', 'length' => null, 'default' => null, 'null' => true, 'comment' => null, 'precision' => null],
+        'created' => ['type' => 'date', 'length' => null, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null],
+        'modified' => ['type' => 'date', 'length' => null, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -41,8 +41,8 @@ class ProdutosFixture extends TestFixture
                 'nome' => 'Lorem ipsum dolor sit amet',
                 'categoria_id' => 1,
                 'preco' => 1,
-                'criado' => '2021-08-03',
-                'modificado' => '2021-08-03',
+                'created' => '2021-08-03',
+                'modified' => '2021-08-03',
             ],
         ];
         parent::init();

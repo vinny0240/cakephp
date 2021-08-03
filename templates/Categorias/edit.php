@@ -23,8 +23,6 @@
                 <legend><?= __('Edit Categoria') ?></legend>
                 <?php
                     echo $this->Form->control('nome');
-                    echo $this->Form->control('criado', ['empty' => true]);
-                    echo $this->Form->control('modificado', ['empty' => true]);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

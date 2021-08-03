@@ -27,6 +27,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Categoria[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
  * @method \App\Model\Entity\Categoria[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
  * @method \App\Model\Entity\Categoria[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class CategoriasTable extends Table
 {
@@ -43,6 +45,8 @@ class CategoriasTable extends Table
         $this->setTable('categorias');
         $this->setDisplayField('nome');
         $this->setPrimaryKey('id');
+
+        $this->addBehavior('Timestamp');
 
         $this->hasMany('Clientes', [
             'foreignKey' => 'categoria_id',
@@ -69,14 +73,6 @@ class CategoriasTable extends Table
             ->maxLength('nome', 50)
             ->requirePresence('nome', 'create')
             ->notEmptyString('nome');
-
-        $validator
-            ->date('criado')
-            ->allowEmptyDate('criado');
-
-        $validator
-            ->date('modificado')
-            ->allowEmptyDate('modificado');
 
         return $validator;
     }

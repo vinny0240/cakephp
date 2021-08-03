@@ -15,8 +15,8 @@
                     <th><?= $this->Paginator->sort('nome') ?></th>
                     <th><?= $this->Paginator->sort('categoria_id') ?></th>
                     <th><?= $this->Paginator->sort('preco') ?></th>
-                    <th><?= $this->Paginator->sort('criado') ?></th>
-                    <th><?= $this->Paginator->sort('modificado') ?></th>
+                    <th><?= $this->Paginator->sort('created') ?></th>
+                    <th><?= $this->Paginator->sort('modified') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
@@ -27,8 +27,8 @@
                     <td><?= h($produto->nome) ?></td>
                     <td><?= $produto->has('categoria') ? $this->Html->link($produto->categoria->nome, ['controller' => 'Categorias', 'action' => 'view', $produto->categoria->id]) : '' ?></td>
                     <td><?= $this->Number->format($produto->preco) ?></td>
-                    <td><?= h($produto->criado) ?></td>
-                    <td><?= h($produto->modificado) ?></td>
+                    <td><?= h($produto->created) ?></td>
+                    <td><?= h($produto->modified) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $produto->id]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $produto->id]) ?>

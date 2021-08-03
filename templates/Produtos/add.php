@@ -21,8 +21,6 @@
                     echo $this->Form->control('nome');
                     echo $this->Form->control('categoria_id', ['options' => $categorias]);
                     echo $this->Form->control('preco');
-                    echo $this->Form->control('criado', ['empty' => true]);
-                    echo $this->Form->control('modificado', ['empty' => true]);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

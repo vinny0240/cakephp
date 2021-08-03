@@ -12,8 +12,8 @@ use Cake\ORM\Entity;
  * @property string $nome
  * @property int $categoria_id
  * @property int $produto_id
- * @property \Cake\I18n\FrozenDate $created
- * @property \Cake\I18n\FrozenDate $modified
+ * @property \Cake\I18n\FrozenDate|null $created
+ * @property \Cake\I18n\FrozenDate|null $modified
  *
  * @property \App\Model\Entity\Categoria $categoria
  * @property \App\Model\Entity\Produto $produto

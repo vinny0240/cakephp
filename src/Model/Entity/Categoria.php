@@ -10,8 +10,8 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $nome
- * @property \Cake\I18n\FrozenDate|null $criado
- * @property \Cake\I18n\FrozenDate|null $modificado
+ * @property \Cake\I18n\FrozenDate|null $created
+ * @property \Cake\I18n\FrozenDate|null $modified
  *
  * @property \App\Model\Entity\Cliente[] $clientes
  * @property \App\Model\Entity\Produto[] $produtos
@@ -29,8 +29,8 @@ class Categoria extends Entity
      */
     protected $_accessible = [
         'nome' => true,
-        'criado' => true,
-        'modificado' => true,
+        'created' => true,
+        'modified' => true,
         'clientes' => true,
         'produtos' => true,
     ];

@@ -35,12 +35,12 @@
                     <td><?= $this->Number->format($produto->preco) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Criado') ?></th>
-                    <td><?= h($produto->criado) ?></td>
+                    <th><?= __('Created') ?></th>
+                    <td><?= h($produto->created) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Modificado') ?></th>
-                    <td><?= h($produto->modificado) ?></td>
+                    <th><?= __('Modified') ?></th>
+                    <td><?= h($produto->modified) ?></td>
                 </tr>
             </table>
             <div class="related">
