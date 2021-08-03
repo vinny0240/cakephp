@@ -10,7 +10,7 @@ use Cake\Mailer\Transport\MailTransport;
 
 return [
     /*
-     * Debug Level:
+     * Debug Level: a
      *
      * Production Mode:
      * false: No error messages, errors, or warnings shown.
