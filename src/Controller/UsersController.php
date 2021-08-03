@@ -17,8 +17,8 @@ class UsersController extends AppController
         //$usuario = "Cesar";
         //$this->set(['usuarios' => $usuario]);
         $usuarios = $this->Users->find()->all();
-        $this->set(['usuarios' => $usuarios]);
-
+        //$this->set(['usuarios' => $usuarios]);
+        $this->set(compact('usuarios'));
     }
 }
 
